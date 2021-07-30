@@ -21,5 +21,26 @@ function ausgabeNamen()
   
 }
 
-ausgabeNamen();
-console.log(firstName); // Fehler --> lokal!!!!
+// ausgabeNamen();
+// console.log(firstName); // Fehler --> lokal!!!!
+
+
+
+/**** Funktionen 02b ****/
+//2b. Parametrisierung + Datenübergabe von AUSSEN
+
+
+function ausgabeNamenParam(firstName) 
+{
+    if (firstName == "" || firstName == undefined) 
+    {
+        firstName = "Nobody"    
+    }
+    console.log("Hallo " + firstName + "!");
+  
+}
+
+// ausgabeNamenParam("Kevin"); // --> Argument(e)
+// ausgabeNamenParam("Holger");
+// ausgabeNamenParam(prompt("Bitte Vornamen eingeben:"));
+ausgabeNamenParam();
